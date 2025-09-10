@@ -13,7 +13,7 @@ Sheer = [
 
 @app.get("/")
 def home():
-    return {"message": "Welcome to sheer API! Go to /r-sheer to get a random sheer."}
+    return {"message": "Welcome to sheer API! Go to /sheer to get a random sheer."}
 
 @app.get("/sheer")
 def get_sheer():
