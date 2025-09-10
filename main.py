@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 app = FastAPI()
 
 # List of sheer images (add more here)
-Sheer = [
+sheer = [
     "images/sheer1.jpg",
     "images/sheer2.jpg",
     "images/sheer3.jpg"
@@ -17,5 +17,5 @@ def home():
 
 @app.get("/sheer")
 def get_sheer():
-    Sheer = random.choice(sheer)
+    sheer = random.choice(sheer)
     return FileResponse(sheer)
